@@ -1,6 +1,5 @@
 import threading
 import os
-
 class find(threading.Thread):
     def __init__(self,kaifanglist,istart,iend,searchstr):
         threading.Thread.__init__(self)
@@ -13,7 +12,6 @@ class find(threading.Thread):
             line=self.kaifanglist[i].decode("gbk","ignore")
             if line.find(self.searchstr)!=-1:
                 print(self.getName(),line,end="")
-
 path=r"D:\尹成python\kaifangx.txt"
 with open(path,"rb") as file:
     kaifanglist=file.readlines()
