@@ -1,6 +1,5 @@
 import threading
 import os
-
 class find(threading.Thread):
     def __init__(self,kaifanglist,istart,iend,searchstr):
         threading.Thread.__init__(self)
